@@ -1,13 +1,16 @@
 .container{
 display: flex;
-flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-around;
 }
 .items{
     flex-direction: column;
 }
 .image{
-height: 300px;
-width: 300px;
+height: auto;
+width: 100%;
+flex-grow: inherit;
 }
 .instructions{
 align-items: center;
