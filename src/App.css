@@ -1,7 +1,11 @@
 .App {
-  text-align: center;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+.header{
+text-align: center;
 }
 
 

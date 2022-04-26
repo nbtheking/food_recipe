@@ -1,18 +1,16 @@
 .container{
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-around;
-}
-.items{
-    flex-direction: column;
+background-color: rgb(202, 198, 191);
+width: 500px;
+height: 500px;
+margin: 10px;
+padding: 10px;
 }
 .image{
-height: auto;
+height: 75%;
 width: 100%;
-flex-grow: inherit;
 }
-.instructions{
-align-items: center;
-justify-content: space-evenly;
+h2{
+    width: 100%;
+    color:black;
+    text-align: center;
 }

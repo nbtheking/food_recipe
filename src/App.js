@@ -29,17 +29,20 @@ function App() {
   }, [query]);
 
   return (
-    <div className="App">
-      <h1>Food Recipe app</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <input type="submit" value="search" />
-      </form>
-      <div>
+    <div>
+      <div className="header">
+        <h1>Food Recipe app</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <input type="submit" value="search" />
+        </form>
+      </div>
+
+      <div className="App">
         {recipes
           ? recipes.map((recipe) => (
               <Details
